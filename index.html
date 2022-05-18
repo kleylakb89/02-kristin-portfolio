@@ -8,17 +8,20 @@
     <title>Kristin Kleyla Portfolio</title>
     <meta name="description" content="In development technical portfolio for Kristin Kleyla" />
     <link rel="stylesheet" href="./Assets/reset.css" />
+    <link rel="stylesheet" href="./Assets/style.css" />
 </head>
 
 <body>
-    
-    <h1>Welcome To My Portfolio</h1>
+    <header>
+        <h1>Welcome To My Portfolio</h1>
+        <img src="./Assets/Images/profile-pic.jpg" alt="profile picture">
 
-    <nav>
-        <a href="#about-me">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact-me">Contact Me</a>
-    </nav>
+        <nav>
+            <a href="#about-me">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact-me">Contact Me</a>
+        </nav>
+    </header>
 
     <main>
 
@@ -70,14 +73,14 @@
         <section>
             <h2 id="contact-me">Contact Me</h2>
             <form>
-                <label for="name">Full Name</label>
+                <label for="name">Full Name:</label>
                 <input type="text" id="name" name="fullname" placeholder="Please enter your full name">
                 
-                <label for="email">Email</label>
+                <label for="email">E-mail:</label>
                 <input type="email" id="email" name="mail" placeholder="Please provide your email">
                 
-                <label for="message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message me"></textarea>
                 
                 <input type="submit" value="Submit">
             </form>
