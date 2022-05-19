@@ -18,6 +18,7 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: var(--dark);
+    border-bottom: 4px solid var(--stripe);
 }
 
 /* formatting heading */
@@ -30,14 +31,14 @@ h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* formatting image container */
 aside div {
     width: 80px;
     height: 80px;
-    /* background-color: var(--dark); */
     margin: 0 auto;
 }
 
-/* formatting profile picture into circle with border and positioning */
+/* formatting profile picture into circle with border */
 aside img {
     width: 100%;
     height: 100%;
@@ -78,34 +79,38 @@ nav a:hover {
     transition: all 250ms ease;
 }
 
-/* setting flexbox properties to #about-me */
+/* setting general properties to #about-me */
 #about-me {
-    display: flex;
     color: var(--light);
-    margin: 30px 0;
+    background-color: var(--back);
 }
 
-/* formatting headings in #about-me */
+/* formatting heading in #about-me */
 #about-me>h2 {
     background-color: var(--medium);
     padding: 32px 16px;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     font-weight: bolder;
     font-size: 20px;
+    display: flex;
+    width: 100%;
 }
 
 /* formatting paragraphs in #about-me */
 #about-me>p {
     background-color: var(--back);
-    padding: 32px;
+    padding: 8px;
+    margin: 16px;
     text-align: center;
+    align-items: center;
 }
 
 /* formatting #about-me link */
 #about-me a {
     background-color: var(--back);
     text-decoration: none;
-    color: var(--light)
+    color: var(--light);
 }
 
 /* formatting unicode characters in #about-me */
@@ -129,6 +134,7 @@ nav a:hover {
     text-align: center;
     font-weight: bolder;
     font-size: 20px;
+    overflow: hidden;
 }
 
 /* setting flexbox properties for #projects articles */
@@ -154,9 +160,7 @@ nav a:hover {
 
 /* formatting #projects images */
 #projects img {
-    display: block;
     max-width: 500px;
-    height: auto;
     margin: 10px auto;
     border: 4px solid var(--dark);
     border-style: outset;
@@ -227,26 +231,62 @@ footer::after {
 }
 
 /* adding screen adaptive qualities */
-@media screen and (max-width: 1007px) {
+@media screen and (max-width: 900px) {
     body {
         flex-direction: column;
     }
 }
 
-@media screen and (max-width: 1007px) {
-    #about-me {
-        display: block;
+@media screen and (max-width: 900px) {
+    nav {
+        justify-content: flex-start;
+        transform: scale(.8);
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 1007px) {
+@media screen and (max-width: 900px) {
+    #about-me {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* stacks and centers form label displays */
+@media screen and (max-width: 900px) {
     #contact-me form {
         display: block;
+        text-align: center;
     }
 }
 
-@media screen and (max-width: 1007px) {
+@media screen and (max-width: 900px) {
+    #contact-me label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
     header {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* scales images to half size */
+@media screen and (max-width: 900px) {
+    #projects img {
+        transform: scale(.5);
+        transition: all 250ms ease;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #projects article {
         display: block;
     }
 }
