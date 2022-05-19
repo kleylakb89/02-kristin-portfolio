@@ -20,7 +20,7 @@ header {
     background-color: var(--dark);
 }
 
-/* formatting About Me heading */
+/* formatting heading */
 h1 {
     color: var(--light);
     justify-content: flex-start;
@@ -30,22 +30,28 @@ h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* formatting profile picture into circle with border and positioning */
-header img {
-    max-width: 5%;
-    height: auto;
-    border: 4px solid var(--medium);
-    border-radius: 100%; 
-    position: absolute;
-    transform: translate(330%, 10%);
+aside div {
+    width: 80px;
+    height: 80px;
+    /* background-color: var(--dark); */
+    margin: 0 auto;
 }
 
-/* formatting nav position and size */
+/* formatting profile picture into circle with border and positioning */
+aside img {
+    width: 100%;
+    height: 100%;
+    border: 4px solid var(--medium);
+    border-radius: 100%; 
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, .8);
+    margin: 10px;
+}
+
+/* formatting nav position */
 nav {
-    justify-content: flex-end;
     display: flex;
-    max-width: 30%;
-    height: auto;
+    justify-content: end;
+    background-color: var(--dark);
 }
 
 /* nav links */
@@ -53,7 +59,7 @@ nav a {
     background-color: var(--dark);
     text-decoration: none;
     color: var(--light);
-    justify-content: space-between;
+    justify-content: end;
     padding: 16px;
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -224,5 +230,23 @@ footer::after {
 @media screen and (max-width: 1007px) {
     body {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1007px) {
+    #about-me {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1007px) {
+    #contact-me form {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1007px) {
+    header {
+        display: block;
     }
 }
