@@ -114,8 +114,15 @@ nav a:hover {
     justify-content: space-around;
 }
 
+#projects span {
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 2px 2px var(--medium);
+}
+
 #projects article p {
    margin: 10%;
+   max-width: 30%;
 }
 
 #projects img {
