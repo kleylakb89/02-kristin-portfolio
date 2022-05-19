@@ -197,3 +197,9 @@ footer::after {
     padding: 6px;
     transform: translate(0, -5px);
 }
+
+@media screen and (max-width: 1007px) {
+    body {
+        flex-direction: column;
+    }
+}
