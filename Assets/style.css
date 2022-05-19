@@ -100,16 +100,22 @@ nav a:hover {
     text-align: center;
     font-weight: bolder;
     font-size: 20px;
+    color: var(--light)
 }
 
 #projects article:first-of-type {
-    padding: 10%;
-    justify-content: space-between;
-    align-items: center;
+
 }
 
-#projects article {
+#projects img {
+    display: block;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* #projects article {
     padding: 10%;
     justify-content: space-between;
     align-items: center;
-}
+} */
