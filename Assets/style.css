@@ -2,10 +2,12 @@
     --light: #aed9e0;
     --medium: #077187;
     --dark: #074f57;
+    --stripe: #70566d;
+    --back: #42273b;
 }
 
 * {
-    background-color: #42273b;
+    background-color: var(--stripe);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -60,3 +62,23 @@ nav a:hover {
     border-radius: 100%;
     transition: all 250ms ease;
 }
+
+#about-me {
+    display: flex;
+    color: var(--light);
+    margin: 40px 0;
+}
+
+#about-me>h2 {
+    background-color: var(--medium);
+    padding: 16px;
+}
+
+#about-me>p {
+    background-color: var(--back);
+    padding: 16px;
+}
+
+/* #about-me p:nth-child(odd) {
+    transform: translate(0, 40%);
+} */
