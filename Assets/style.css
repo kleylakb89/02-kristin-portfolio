@@ -157,3 +157,36 @@ nav a:hover {
     align-items: center;
     margin: 16px;
 }
+
+label {
+    color: var(--light)
+}
+
+input, textarea {
+    background-color: var(--dark);
+    margin: 16px;
+}
+
+input[type=submit] {
+    background-color: var(--light);
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: var(--light);
+    margin: 16px;
+}
+
+footer::before {
+    content: "\2767";
+    padding: 6px;
+    transform: translate(0, -5px);
+}
+
+footer::after {
+    content: "\2619";
+    padding: 6px;
+    transform: translate(0, -5px);
+}
