@@ -24,6 +24,12 @@ Navigation bar links to relevant content below. About Me contains outgoing link 
 
 ## Visuals
 
+The page on standard desktop.
+![Portfolio Page](./Assets/Images/portfolio-page.png)
+
+The page when resized.
+![Portfolio Resized](./Assets/Images/portfolio-resize.png)
+
 ## Resources
 
 - [Live Site](https://kleylakb89.github.io/02-kristin-portfolio/)
