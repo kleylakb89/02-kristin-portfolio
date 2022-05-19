@@ -89,9 +89,9 @@ nav a:hover {
     color: var(--light)
 }
 
-/* #about-me p:nth-child(odd) {
-    transform: translate(0, 40%);
-} */
+#about-me p:nth-child(odd) {
+    font-size: 3em;
+}
 
 #projects {
     display: block;
@@ -125,6 +125,7 @@ nav a:hover {
 #projects article p {
    margin: 10%;
    max-width: 30%;
+   flex-wrap: wrap;
 }
 
 #projects img {
